@@ -1,10 +1,16 @@
 <!DOCTYPE html>
+<html>
 <head>
     <meta name="description" content="CRUD WebApp created for DataBases 01">
     <meta name="robots" content="index">
     <meta charset="utf-8">
     <title>CRUD Web Application</title>
     <link href="css/style.css" rel="stylesheet"/>
+    <style type="text/css">
+        #supplies {
+            border: 2px solid #000;
+        }
+    </style>
     <link rel="icon" href="Resources/cube-solid.svg">
 </head>
 <body>
@@ -23,17 +29,34 @@
         </nav>
         <div class="lowerBanner">
             <ul class="sectionLinks">
-                <li><a href="supplies.html">suministros</a></li>
+                <li id="supplies"><a href="supplies.html">suministros</a></li>
                 <li><a href="batches.html">lotes</a></li>
                 <li><a href="categories.html">categorias</a></li>
             </ul>
         </div>
-        <div class="mainSection">
-            <h2>bienvenidos</h2>
-            <p>Nuestro proposito es ofrecerte la mejor aplicacion web para tus necesidades de logistica.<br>Por favor, clickea sobre uno de los 3 tipos de formularios que ofrecemos en  nuestra app!</p>
+        <div class="form">
+            <form action="/something" method="post">
+                <p>
+                    <label>ID</label><br>
+                    <input type="text" name="id">
+                </p>
+                <p>
+                    <label>Nombre</label><br>
+                    <input type="text" name="name" id="">
+                </p>
+                <p>
+                    <label>Descripcion</label><br>
+                    <input type="text" name="description">
+                </p>
+                <p>
+                    <label>Precio</label><br>
+                    <input type="text" name="price">
+                </p>
+                <p>
+                    <label>Imagen</label><br>
+                    <input type="text" name="image">
+                </p>
+            </form>
         </div>
-    </main>
-    <footer>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatum natus esse</p>
-    </footer>
-</body>
+    </body>
+</html>

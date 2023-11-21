@@ -1,10 +1,16 @@
 <!DOCTYPE html>
+<html>
 <head>
     <meta name="description" content="CRUD WebApp created for DataBases 01">
     <meta name="robots" content="index">
     <meta charset="utf-8">
     <title>CRUD Web Application</title>
     <link href="css/style.css" rel="stylesheet"/>
+    <style type="text/css">
+        #batches {
+            border: 2px solid #000;
+        }
+    </style>
     <link rel="icon" href="Resources/cube-solid.svg">
 </head>
 <body>
@@ -24,16 +30,34 @@
         <div class="lowerBanner">
             <ul class="sectionLinks">
                 <li><a href="supplies.html">suministros</a></li>
-                <li><a href="batches.html">lotes</a></li>
+                <li id="batches"><a href="batches.html">lotes</a></li>
                 <li><a href="categories.html">categorias</a></li>
             </ul>
         </div>
-        <div class="mainSection">
-            <h2>bienvenidos</h2>
-            <p>Nuestro proposito es ofrecerte la mejor aplicacion web para tus necesidades de logistica.<br>Por favor, clickea sobre uno de los 3 tipos de formularios que ofrecemos en  nuestra app!</p>
+        <div class="form">
+            <form action="/something" method="post">
+                <p>
+                    <label>ID</label><br>
+                    <input type="text" name="id">
+                </p>
+                <p>
+                    <label>Cantidad</label><br>
+                    <input type="text" name="quantity">
+                </p>
+                <p>
+                    <label>Vendido</label><br>
+                    <input type="text" name="sold">
+                </p>
+                <p>
+                    <label>F. Vencimiento</label><br>
+                    <input type="text" name="expire">
+                </p>
+                <p>
+                    <label>Suministro</label><br>
+                    <input type="text" name="supply">
+                </p>
+            </form>
         </div>
-    </main>
-    <footer>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatum natus esse</p>
-    </footer>
+        </main>
 </body>
+</html>
