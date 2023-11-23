@@ -95,7 +95,7 @@ a {
     transition: 0.05s;
 }
 
-section {
+/*section {
     display: flex;
     flex-direction: column;
     background-color: #3964db;
@@ -103,6 +103,14 @@ section {
     align-items: center;
     width: 100%;
     height: 100%;
+}*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .card {
@@ -144,7 +152,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50%;
+    height: 5%;
 }
 
 form {
@@ -152,7 +160,6 @@ form {
     justify-content: space-between;
     align-items: center;
     border: 1px solid #474747;
-    margin: 1rem;
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0.25rem 0.25rem 1rem #000;
@@ -172,9 +179,8 @@ form {
 }
 
 .button {
-    border: 0;
     border-radius: 8px;
-    box-shadow: 0.5rem 0.5rem 0.5rem #000;
+    box-shadow: 0.25rem 0.25rem 0.25rem #000;
     cursor: pointer;
     text-transform: uppercase;
     font-size: 1.1rem;
@@ -202,6 +208,12 @@ form {
     border: 1px solid #521515;
   }
 
+  #blueButton {
+    background-color: #3d58db;
+    color: #000729;
+    border: 1px solid #000729;
+  }
+
   .button:hover {
     box-shadow: 15px 15px 1rem  #000;
   }
@@ -212,9 +224,24 @@ form {
     }
   }
 
+  .table {
+    width: 80%;
+    background-color: #ebebeb;
+    padding: 2rem;
+    border: 1px solid #474747;
+    border-radius: 1rem;
+  }
+
+  .thead {
+    background-color: #262626;
+  }
+
+  thead th {
+    color: #FFF;
+    padding: 0.5rem 1rem;
+  }
+
 footer {
-    position: absolute;
-    bottom: 5px;
     width: 100%;
     margin: 1rem 0;
     border-top: 1px solid #474747;

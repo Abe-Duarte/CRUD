@@ -14,7 +14,6 @@
     <link rel="icon" href="Resources/cube-solid.svg">
 </head>
 <body>
-    <main>
         <div class="upperBanner">
             <p>Este sitio fue creacion de Luis Dubuc, Felipe Andarcia y <a href="https://github.com/Abe-Duarte" target="_blank">Abraham Duarte</a></p>
         </div>
@@ -34,37 +33,60 @@
                 <li><a href="categories.html">categorias</a></li>
             </ul>
         </div>
-        <section>
+        <main>
         <div class="form">
             <form action="/something" method="post">
                 <p>
                     <label>ID</label><br>
-                    <input type="text" name="id">
+                    <input type="text" name="id" class="inputField">
                 </p>
                 <p>
                     <label>Nombre</label><br>
-                    <input type="text" name="name" id="">
+                    <input placeholder="Introduce un nombre" type="text" name="name" class="inputField">
                 </p>
                 <p>
                     <label>Descripcion</label><br>
-                    <input type="text" name="description">
+                    <input placeholder="Introduce una descripcion" type="text" name="description" class="inputField">
                 </p>
                 <p>
                     <label>Precio</label><br>
-                    <input type="text" name="price">
+                    <input placeholder="Ingresa un precio" type="text" name="price" class="inputField">
                 </p>
                 <p>
                     <label>Imagen</label><br>
-                    <input type="text" name="image">
+                    <button role="button" class="button" id="blueButton" style="margin: 0;">Escoger</button>
                 </p>
             </form>
         </div>
-        <div class="buttons">
-            <button class="button" role="button" id="greenButton">añadir</button>
-            <button class="button" role="button" id="yellowButton">editar</button>
-            <button class="button" role="button" id="redButton">borrar</button>
+        <div class="table">
+            <table>
+                <thead class="thead">
+                        <tr>
+                            <th>ID</th>
+                            <th>nombre</th>
+                            <th>descripcion</th>
+                            <th>precio</th>
+                            <th>imagen</th>
+                        </tr>
+                </thead>
+                <tbody id="student-list">
+                    <tr>
+                        <td>001</td>
+                        <td>Abraham</td>
+                        <td>IT</td>
+                        <td>340</td>
+                        <td>Imagen</td>
+                        <td><button href="#" class="button delete" role="button" id="redButton">borrar</button></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-    </section>
+        <div class="buttons">
+            <button href="#" class="button new" role="button" id="greenButton">añadir</button>
+            <button href="#" class="button edit" role="button" id="yellowButton">editar</button>
+            <button href="#" class="button delete" role="button" id="redButton">borrar</button>
+        </div>
+    </main>
     <footer>
         <div class="footer">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatum natus esse</p>
@@ -72,5 +94,6 @@
             <p>Proyecto realizado para Bases De Datos 01 - 2023</p>
         </div>
     </footer>
+    <script src="./js/functionality.js"></script>
     </body>
 </html>
